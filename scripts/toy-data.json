@@ -1,0 +1,169 @@
+[
+    {
+        "id": 1,
+        "name": "Teddy Bear",
+        "price": 19.99,
+        "category": " Stuffed Toys",
+        "image": "",
+                "id": 1,
+                "name": "Teddy Bear",
+                "price": 19.99,
+                "category": "Stuffed Toys",
+                "image": "",
+                "description": "A soft and cuddly teddy bear."
+            },
+            {
+                "id": 2,
+                "name": "Plush Bunny",
+                "price": 15.99,
+                "category": "Stuffed Toys",
+                "image": "",
+                "description": "A cute and fluffy plush bunny."
+            },
+            {
+                "id": 3,
+                "name": "Stuffed Elephant",
+                "price": 22.99,
+                "category": "Stuffed Toys",
+                "image": "",
+                "description": "A large and huggable stuffed elephant."
+            },
+            {
+                "id": 4,
+                "name": "Stuffed Dog",
+                "price": 18.99,
+                "category": "Stuffed Toys",
+                "image": "",
+                "description": "A loyal and adorable stuffed dog."
+            },
+            {
+                "id": 5,
+                "name": "Stuffed Cat",
+                "price": 17.99,
+                "category": "Stuffed Toys",
+                "image": "",
+                "description": "A soft and charming stuffed cat."
+            },
+            {
+                "id": 6,
+                "name": "Toy Car",
+                "price": 9.99,
+                "category": "Vehicles",
+                "image": "",
+                "description": "A fast and colorful toy car."
+            },
+            {
+                "id": 7,
+                "name": "Toy Truck",
+                "price": 14.99,
+                "category": "Vehicles",
+                "image": "",
+                "description": "A sturdy and durable toy truck."
+            },
+            {
+                "id": 8,
+                "name": "Toy Train",
+                "price": 19.99,
+                "category": "Vehicles",
+                "image": "",
+                "description": "A classic and fun toy train."
+            },
+            {
+                "id": 9,
+                "name": "Toy Airplane",
+                "price": 12.99,
+                "category": "Vehicles",
+                "image": "",
+                "description": "A sleek and adventurous toy airplane."
+            },
+            {
+                "id": 10,
+                "name": "Toy Boat",
+                "price": 11.99,
+                "category": "Vehicles",
+                "image": "",
+                "description": "A fun and floatable toy boat."
+            },
+            {
+                "id": 11,
+                "name": "Building Blocks",
+                "price": 24.99,
+                "category": "Educational Toys",
+                "image": "",
+                "description": "A set of colorful building blocks."
+            },
+            {
+                "id": 12,
+                "name": "Puzzle Set",
+                "price": 14.99,
+                "category": "Educational Toys",
+                "image": "",
+                "description": "A challenging and fun puzzle set."
+            },
+            {
+                "id": 13,
+                "name": "Shape Sorter",
+                "price": 19.99,
+                "category": "Educational Toys",
+                "image": "",
+                "description": "A fun and educational shape sorter."
+            },
+            {
+                "id": 14,
+                "name": "Counting Beads",
+                "price": 12.99,
+                "category": "Educational Toys",
+                "image": "",
+                "description": "A colorful set of counting beads."
+            },
+            {
+                "id": 15,
+                "name": "Alphabet Blocks",
+                "price": 16.99,
+                "category": "Educational Toys",
+                "image": "",
+                "description": "A set of blocks with letters for learning."
+            },
+            {
+                "id": 16,
+                "name": "Action Figure",
+                "price": 14.99,
+                "category": "Action Toys",
+                "image": "",
+                "description": "A cool and poseable action figure."
+            },
+            {
+                "id": 17,
+                "name": "Superhero Toy",
+                "price": 19.99,
+                "category": "Action Toys",
+                "image": "",
+                "description": "A heroic and fun superhero toy."
+            },
+            {
+                "id": 18,
+                "name": "Robot Toy",
+                "price": 29.99,
+                "category": "Action Toys",
+                "image": "",
+                "description": "A futuristic and interactive robot toy."
+            },
+            {
+                "id": 19,
+                "name": "Dinosaur Toy",
+                "price": 22.99,
+                "category": "Action Toys",
+                "image": "",
+                "description": "A realistic and roaring dinosaur toy."
+            },
+            {
+                "id": 20,
+                "name": "Pirate Toy",
+                "price": 18.99,
+                "category": "Action Toys",
+                "image": "",
+                "description": "A swashbuckling and adventurous pirate toy."
+            }
+       
+    
+]

@@ -9,7 +9,7 @@
                 "name": "Teddy Bear",
                 "price": 19.99,
                 "category": "Stuffed Toys",
-                "image": "",
+                "image": "image/teddy_bear.png",
                 "description": "A soft and cuddly teddy bear."
             },
             {
@@ -17,7 +17,7 @@
                 "name": "Plush Bunny",
                 "price": 15.99,
                 "category": "Stuffed Toys",
-                "image": "",
+                "image": "images/bunny.png",
                 "description": "A cute and fluffy plush bunny."
             },
             {
@@ -25,7 +25,7 @@
                 "name": "Stuffed Elephant",
                 "price": 22.99,
                 "category": "Stuffed Toys",
-                "image": "",
+                "image": "images/elephant.png",
                 "description": "A large and huggable stuffed elephant."
             },
             {
@@ -33,7 +33,7 @@
                 "name": "Stuffed Dog",
                 "price": 18.99,
                 "category": "Stuffed Toys",
-                "image": "",
+                "image": "images/dog.png",
                 "description": "A loyal and adorable stuffed dog."
             },
             {
@@ -41,7 +41,7 @@
                 "name": "Stuffed Cat",
                 "price": 17.99,
                 "category": "Stuffed Toys",
-                "image": "",
+                "image": "images/cat.png",
                 "description": "A soft and charming stuffed cat."
             },
             {
@@ -49,7 +49,7 @@
                 "name": "Toy Car",
                 "price": 9.99,
                 "category": "Vehicles",
-                "image": "",
+                "image": "images/toy-car.png",
                 "description": "A fast and colorful toy car."
             },
             {
@@ -57,7 +57,7 @@
                 "name": "Toy Truck",
                 "price": 14.99,
                 "category": "Vehicles",
-                "image": "",
+                "image": "images/toy-truck.png",
                 "description": "A sturdy and durable toy truck."
             },
             {
@@ -65,7 +65,7 @@
                 "name": "Toy Train",
                 "price": 19.99,
                 "category": "Vehicles",
-                "image": "",
+                "image": "images/toy-train.png",
                 "description": "A classic and fun toy train."
             },
             {
@@ -73,7 +73,7 @@
                 "name": "Toy Airplane",
                 "price": 12.99,
                 "category": "Vehicles",
-                "image": "",
+                "image": "images/airplane-toy.png",
                 "description": "A sleek and adventurous toy airplane."
             },
             {
@@ -81,7 +81,7 @@
                 "name": "Toy Boat",
                 "price": 11.99,
                 "category": "Vehicles",
-                "image": "",
+                "image": "images/toy-boat.png",
                 "description": "A fun and floatable toy boat."
             },
             {
@@ -89,7 +89,7 @@
                 "name": "Building Blocks",
                 "price": 24.99,
                 "category": "Educational Toys",
-                "image": "",
+                "image": "images/building-blocks.png",
                 "description": "A set of colorful building blocks."
             },
             {
@@ -97,7 +97,7 @@
                 "name": "Puzzle Set",
                 "price": 14.99,
                 "category": "Educational Toys",
-                "image": "",
+                "image": "images/puzzle.png",
                 "description": "A challenging and fun puzzle set."
             },
             {
@@ -105,7 +105,7 @@
                 "name": "Shape Sorter",
                 "price": 19.99,
                 "category": "Educational Toys",
-                "image": "",
+                "image": "images/shape-sorter.png", 
                 "description": "A fun and educational shape sorter."
             },
             {
@@ -113,7 +113,7 @@
                 "name": "Counting Beads",
                 "price": 12.99,
                 "category": "Educational Toys",
-                "image": "",
+                "image": "images/beads.png",
                 "description": "A colorful set of counting beads."
             },
             {
@@ -121,7 +121,7 @@
                 "name": "Alphabet Blocks",
                 "price": 16.99,
                 "category": "Educational Toys",
-                "image": "",
+                "image": "images/alphabet-blocks.png",
                 "description": "A set of blocks with letters for learning."
             },
             {
@@ -129,7 +129,7 @@
                 "name": "Action Figure",
                 "price": 14.99,
                 "category": "Action Toys",
-                "image": "",
+                "image": "images/action-figure.png",
                 "description": "A cool and poseable action figure."
             },
             {
@@ -137,7 +137,7 @@
                 "name": "Wrestler Toy",
                 "price": 19.99,
                 "category": "Action Toys",
-                "image": "",
+                "image": "images/wrestler.png",
                 "description": "A wrestler toy."
             },
             {
@@ -145,7 +145,7 @@
                 "name": "Robot Toy",
                 "price": 29.99,
                 "category": "Action Toys",
-                "image": "",
+                "image": "images/robot-toy.png",
                 "description": "A futuristic and interactive robot toy."
             },
             {
@@ -153,7 +153,7 @@
                 "name": "Dinosaur Toy",
                 "price": 22.99,
                 "category": "Action Toys",
-                "image": "",
+                "image": "images/dinosaur.png",
                 "description": "A realistic and roaring dinosaur toy."
             },
             {
@@ -161,7 +161,7 @@
                 "name": "Pirate Toy",
                 "price": 18.99,
                 "category": "Action Toys",
-                "image": "",
+                "image": "images/pirate.png",
                 "description": "A swashbuckling and adventurous pirate toy."
             }
        

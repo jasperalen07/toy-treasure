@@ -134,11 +134,11 @@
             },
             {
                 "id": 17,
-                "name": "Superhero Toy",
+                "name": "Wrestler Toy",
                 "price": 19.99,
                 "category": "Action Toys",
                 "image": "",
-                "description": "A heroic and fun superhero toy."
+                "description": "A wrestler toy."
             },
             {
                 "id": 18,

@@ -8,8 +8,9 @@ async function fetchToyData() {
             throw new Error(`Response Status: ${response.status}`);
             console.log(url);
         }
-       const json = await response.json();
-       console.log(json)
+       const toysData = await response.json();
+       console.log(toysData);
+       displayToys(toysData);
     } catch (error) {
         console.error('Error fetching toy data:', error);
     }
@@ -17,7 +18,7 @@ async function fetchToyData() {
 }
 fetchToyData();
 
-function displayToys(){
+function displayToys(toysData){
     const toyProducts = document.getElementById('toy-products');
 
     // Creating an if statement making sure a product data exist
@@ -25,9 +26,27 @@ function displayToys(){
         console.error('Element with ID "toy-products" not found.');
         return;
     }
-
+    
+    
     toysData.forEach((toy) => {
         
+            const newDiv = document.createElement("div");
+
+            const toyTitle = document.createElement("h2");
+            toyTitle.textContent = toy.name;
+
+            const toyPrice = document.createElement("p");
+            toyPrice.textContent = `$${toy.price}`;
+
+            const image = document.createElement("img");
+            image.src = toy.image;
+            image.alt = toy.name;
+
+
+        newDiv.appendChild(toyTitle);
+        newDiv.appendChild(toyPrice);
+        newDiv.appendChild(image);
+       toyProducts.appendChild(newDiv);
     })
     
 }

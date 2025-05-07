@@ -32,20 +32,20 @@ function displayToys(toysData){
         
             const newDiv = document.createElement("div");
 
+            const image = document.createElement("img");
+            image.src = toy.image;
+            image.alt = toy.name;
             const toyTitle = document.createElement("h2");
             toyTitle.textContent = toy.name;
 
             const toyPrice = document.createElement("p");
             toyPrice.textContent = `$${toy.price}`;
 
-            const image = document.createElement("img");
-            image.src = toy.image;
-            image.alt = toy.name;
 
-
+            
+            newDiv.appendChild(image);
         newDiv.appendChild(toyTitle);
         newDiv.appendChild(toyPrice);
-        newDiv.appendChild(image);
        toyProducts.appendChild(newDiv);
     })
     

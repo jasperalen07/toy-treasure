@@ -41,11 +41,17 @@ function displayToys(toysData){
             const toyPrice = document.createElement("p");
             toyPrice.textContent = `$${toy.price}`;
 
+            const detailsLink = document.createElement("a");
+            detailsLink.textContent = "View Details";
+            detailsLink.href = `details.html?i=${toy.id}`;
+
 
             
             newDiv.appendChild(image);
         newDiv.appendChild(toyTitle);
         newDiv.appendChild(toyPrice);
+        newDiv.appendChild(detailsLink);
+
        toyProducts.appendChild(newDiv);
     })
     

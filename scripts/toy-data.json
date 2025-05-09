@@ -82,11 +82,11 @@
             },
             {
                 "id": 11,
-                "name": "Building Blocks",
+                "name": "Lego Car",
                 "price": 24.99,
                 "category": "Educational Toys",
-                "image": "images/building-blocks.png",
-                "description": "A set of colorful building blocks."
+                "image": "images/lego-car.png",
+                "description": "A block of lego truck"
             },
             {
                 "id": 12,

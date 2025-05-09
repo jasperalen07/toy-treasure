@@ -1,6 +1,7 @@
 // In this file I will be doing the sorting and filter function based on default, categories and prices
 
-fetchToyData()
+fetchToyData();
+
 
 const sortOptions = document.getElementById('sort-options');
 
@@ -25,7 +26,52 @@ sortOptions.addEventListener('change', function(){
         displayToys();
     }
 
+    // Step-by-step plan to refactor and organize the code:
 
+    // 1. Centralize Data Fetching
+    //    - Move data fetching logic into a reusable function or module.
+    //    - If homepage.js already fetches toy data, consider exporting the data or a function to get the data from there.
+
+    // 2. Share Data Between Files
+    //    - Use a global variable or shared module to store fetched toy data so both homepage.js and sorting.js can access it.
+    //    - Alternatively, trigger a custom event after fetching data in homepage.js and listen for it in sorting.js.
+
+    // 3. Refactor Sorting and Filtering
+    //    - Write pure functions for sorting and filtering that take data as input and return new arrays.
+    //    - Avoid mutating the original data unless necessary.
+
+    // 4. Display Logic
+    //    - Have a single function responsible for rendering toys to the DOM.
+    //    - Call this function after sorting or filtering.
+
+    // 5. Event Handling
+    //    - Set up event listeners after ensuring the data is loaded.
+    //    - If data is loaded asynchronously, wait for it before enabling sorting/filtering.
+
+    // 6. Testing
+    //    - Test each function independently with sample data before integrating.
+
+    // Example: In homepage.js, after fetching data, dispatch a custom event with the data:
+    // fetch('toys.json')
+    //    .then(res => res.json())
+    //    .then(data => {
+    //       window.toysData = data;
+    //       document.dispatchEvent(new CustomEvent('toysDataLoaded', { detail: data }));
+    //    });
+
+    // Example: In sorting.js, listen for this event:
+    // document.addEventListener('toysDataLoaded', (e) => {
+    //    window.toysData = e.detail;
+    //    displayToys();
+    //    // Now you can safely set up event listeners for sorting/filtering
+    // });
+
+    // Start by:
+    // - Refactoring your data fetching and sharing logic.
+    // - Then, rewrite your sorting/filtering functions as pure functions.
+    // - Finally, connect everything with event listeners and rendering.
+
+    // This approach will make your code modular, maintainable, and easier to debug.
 });
 
 // Create a function for every options 

@@ -37,7 +37,8 @@ function displayToys(toysData){
         return;
     }
     
-    
+    // No changes needed here for toysData definition.
+    // toysData is passed as a parameter to this function from fetchToyData().
     toysData.forEach((toy) => {
         
         // New container for each toy data
@@ -46,7 +47,7 @@ function displayToys(toysData){
         // Create an image element for each toy
             const image = document.createElement("img");
             image.src = toy.image;
-            image.alt = toy.name;
+            image.alt = toy.name; 
 
             // Create a H2 element for each name of the toy
             const toyTitle = document.createElement("h2");

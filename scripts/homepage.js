@@ -1,6 +1,6 @@
 // This script fetches toy data from a JSON file and logs it to the console.
 // It uses the Fetch API to make an asynchronous request to the specified URL.
-let originalToysData = [];
+let originalToysData = []; 
 
 async function fetchToyData() {
     const url = 'scripts/toy-data.json';
@@ -23,7 +23,9 @@ async function fetchToyData() {
     }
 
 }
-fetchToyData();
+fetchToyData().then(() => {
+    document.dispatchEvent(new CustomEvent('toysDataLoaded', { detail: originalToysData }));
+});
 
 // This function is when you make a forEach loop, create an element for each data you are trying to fetch
 

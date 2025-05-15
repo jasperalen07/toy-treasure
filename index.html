@@ -6,51 +6,108 @@
     <title>Toy Treasure</title>
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/normalize.css">
+    <style>
+        /* Hamburger base styles */
+        .hamburger {
+            display: block;
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+            position: relative;
+            z-index: 1001;
+        }
+        .hamburger span {
+            display: block;
+            height: 4px;
+            width: 100%;
+            background: #fff;
+            border-radius: 2px;
+            margin: 6px 0;
+            transition: 0.4s;
+        }
 
+        /* Hamburger animation to X */
+        .hamburger.active span:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+        }
+        .hamburger.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(7px, -7px);
+        }
+
+        /* Show/hide nav for mobile */
+        .nav {
+            display: none;
+        }
+        .nav.active {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            background: #222;
+            position: absolute;
+            top: 60px;
+            right: 1rem;
+            left: 1rem;
+            border-radius: 8px;
+            padding: 1rem 0;
+            z-index: 1000;
+        }
+
+        /* Tablet/Desktop: show nav, hide hamburger */
+        @media (min-width: 600px) {
+            .nav {
+                position: static;
+                flex-direction: row;
+                display: flex !important;
+                background: none;
+                padding: 0;
+                gap: 2rem;
+            }
+            .hamburger {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
     <header>
-
         <div class="logo">TT</div>
-
-        <nav>
+        <nav class="nav">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
-
-     
-        
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </header>
-
     <main>
         <h1>Toy treasure</h1>
-
-
-
         <label class="filter" for="sort-options">Filtered By:</label>
-       <select id="sort-options" class="filter">
-        <option class="choice"  value="default" >Featured</option>
-        <option class="choice"  value="stuffed-toys" >Category: Stuffed Toys</option>
-        <option class="choice"  value="vehicle-toys" >Category: Vehicles</option>
-        <option class="choice"  value="educational" >Category: Educational Toys</option>
-        <option class="choice"  value="action-toys" >Category: Action Toys</option>
-        <option class="choice"  value="price-asc" >Price: High to Low</option>
-        <option class="choice"  value="price-desc" >Price: Low to High</option>
-    </select>
-
-    <section id="toy-products">
-        <!-- Toy products will be output here by fetching the json -->
-    </section>
+        <select id="sort-options" class="filter">
+            <option class="choice" value="default">Featured</option>
+            <option class="choice" value="stuffed-toys">Category: Stuffed Toys</option>
+            <option class="choice" value="vehicle-toys">Category: Vehicles</option>
+            <option class="choice" value="educational">Category: Educational Toys</option>
+            <option class="choice" value="action-toys">Category: Action Toys</option>
+            <option class="choice" value="price-asc">Price: High to Low</option>
+            <option class="choice" value="price-desc">Price: Low to High</option>
+        </select>
+        <section id="toy-products">
+            <!-- Toy products will be output here by fetching the json -->
+        </section>
     </main>
-
     <footer>
         <p> Crafted by AV</p>
     </footer>
-
-</head>
-<body>
-    
     <script src="scripts/homepage.js"></script>
     <script src="scripts/sorting.js"></script>
-    <!-- <script src="scripts/hamburger-menu.js"></script> -->
+    <script src="scripts/hamburger-menu.js"></script>
+</body>
+</html>

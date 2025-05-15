@@ -1,0 +1,82 @@
+/* Mobile First Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: #222;
+    color: #fff;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    background: #222;
+    position: absolute;
+    top: 60px;
+    right: 1rem;
+    left: 1rem;
+    border-radius: 8px;
+    padding: 1rem 0;
+}
+
+.nav.active {
+    display: flex;
+}
+
+.hamburger {
+    display: block;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+}
+
+.hamburger span {
+    display: block;
+    height: 4px;
+    background: #fff;
+    border-radius: 2px;
+    margin: 4px 0;
+}
+
+/* Tablet Styles */
+@media (min-width: 600px) {
+    .nav {
+        position: static;
+        flex-direction: row;
+        display: flex !important;
+        background: none;
+        padding: 0;
+        gap: 2rem;
+    }
+    .hamburger {
+        display: none;
+    }
+}
+
+/* Desktop Styles */
+@media (min-width: 1024px) {
+    header {
+        padding: 1.5rem 3rem;
+    }
+    .logo {
+        font-size: 2rem;
+    }
+    .nav {
+        gap: 3rem;
+    }
+}

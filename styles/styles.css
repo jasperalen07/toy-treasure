@@ -10,7 +10,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    background: #222;
+    background: #004080;
     color: #fff;
     
 }
@@ -29,7 +29,7 @@ header {
     top: 60px;
     right: 1rem;
     left: 1rem;
-    border-radius: 8px;
+    border-radius: 5px;
     padding: 1rem 0;
 }
 
@@ -39,13 +39,14 @@ header {
     justify-content: center;
     align-items: center;
     width: 100%;
-    background-color: #333;
+    background-color: #004080;
     transition: background-color 0.3s, transform 0.3s;
       top: 6.8rem; /* Ensure it aligns properly with the header */
       left: 0rem;
     margin-top: 0; /* Remove extra space */
     padding: 1rem;
     box-sizing: border-box; /* Ensures padding is included in the width */
+    border: solid 2px black;
 }
 
 /* Style the links inside the nav when active */
@@ -57,7 +58,7 @@ header {
     padding: 0.5rem 1rem;
     border-radius: .125rem;
     transition: color 0.3s;
-    background-color: #333;
+    background-color: #004080;
   
    
    
@@ -84,7 +85,7 @@ header {
 }
 
 .hamburger.active {
-    background: #444;
+    background: #004080;
     border-radius: 6px;
     list-style: none;
     padding: 4px;
@@ -117,6 +118,13 @@ header {
     list-style: none;
     text-decoration: none;
 }
+/* Sorting  */
+
+.filter{
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    
+}
 
 .title {
     margin-bottom: 5rem;
@@ -137,10 +145,45 @@ img {
     margin-top: 2rem;
 }
 
-a {
-    color: rgb(229, 255, 0);
-    
+div a {
+    color:#004080;
+    text-decoration: none;
+    background-color: #004080; /* Add a background color */
+    margin: 0.5rem; /* Reduce margin to bring elements closer */
+    padding: 0.5rem; /* Adjust padding for better spacing */
+    border-radius: 1.3rem;
+    border: solid 3px #000000;
+    color: #fff;
 }
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem; /* Reduce margin to bring elements closer */
+}
+
+p {
+    font-size: 1rem;
+    margin-top: 0.5rem; /* Reduce margin to bring elements closer */
+}
+
+/* footer */
+
+.footer-container{
+    display: flex;
+    justify-content: center;
+    background-color: #004080; /* Water blue */
+    margin-bottom: 1rem;
+    padding: 2rem;
+    border: solid 2px black;
+}
+
+.footer-name{
+    font-size: 1.4rem;
+    color: #fff;
+    text-decoration: underline black;
+}
+
+
 
 @media (min-width: 600px) {
     .nav {

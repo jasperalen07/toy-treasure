@@ -260,7 +260,8 @@ width:50%;
 
 /* Title */
 .title{
- font-size: 4rem;
+ font-size: 2.7rem;
+ margin-bottom: .5rem;
 }
 
 /* Img */
@@ -344,7 +345,11 @@ div a {
 
 #sort-options{
 font-size: 2rem;
-width:40%;
+width:20%;
+}
+
+.title{
+    font-size: 3rem ;
 }
 
 
@@ -364,7 +369,7 @@ div img{
 }
 
 div h2{
-    font-size: 1.7rem;
+    font-size: 1.5rem;
 }
 
 div p {

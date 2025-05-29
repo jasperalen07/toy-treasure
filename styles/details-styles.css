@@ -237,7 +237,7 @@ p{
     }
 
     .nav {
-        display: flex !important;
+        display: flex;
         flex-direction: row;
         justify-content: flex-end;
         align-items: center;
@@ -247,7 +247,7 @@ p{
         width: 70%;
         border: none;
         padding: 0;
-        margin: 0 3rem 0 3rem;
+        margin: 0 1rem 0 1rem;
         box-sizing: border-box;
     }
 
@@ -327,19 +327,42 @@ img{
         font-size: 2.5rem;
     }
     .nav {
-        gap: 3rem;
+     gap: 3rem;
         padding: 0;
-        margin: 0 0 0 9rem;
+        margin: 0;
         justify-content: flex-end;
+        margin-left: 9rem;
     }
     .ul-hamburger {
-        display: flex;
+            display: flex;
         flex-direction: row;
-        justify-content: flex-end;
+         justify-content: flex-end;
         margin: 2rem;
-        padding: 0;
+         padding: 0rem;
+   
     }
     .li-hamburger a {
         font-size: 2rem;
+        gap: 1rem;
     }
+
+
+    /* Main */
+
+     img{
+    width: 30%;
+    height: auto;
+    margin-top: 2rem;
+    margin-left:32rem ;
+}
+
+ h2{
+    font-size: 1.5rem;
+}
+
+ p {
+    font-size: 1.5rem;
+
+}
+}
 }

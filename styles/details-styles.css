@@ -1,5 +1,8 @@
 /* Mobile First Styles */
-
+body{
+    margin: 0;
+    padding: 0;
+}
 /* Header styles */
 header {
     display: flex;
@@ -43,7 +46,6 @@ header {
     padding: 4px;
     margin-bottom: 1rem;
 }
-
 .hamburger.active span:nth-child(1) {
     transform: rotate(45deg) translate(5px, 5px);
 }
@@ -69,8 +71,25 @@ header {
     z-index: 1000;
 }
 
-.nav ul {
-    list-style: none; /* Remove bullet points */
+.nav.active {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #004080;
+    transition: background-color 0.3s, transform 0.3s;
+    top: 6.8rem;
+    left: 0rem;
+    margin-top: 0;
+    padding: 1rem;
+    box-sizing: border-box;
+    border: solid 2px black;
+}
+
+/* Remove bullet points and style nav list */
+.ul-hamburger {
+    list-style: none;
     padding: 0;
     margin: 0;
     width: 100%;
@@ -79,31 +98,21 @@ header {
     gap: 1rem;
 }
 
-.nav li {
+.li-hamburger {
     width: 100%;
     text-align: center;
 }
 
-/* Show nav when active */
-.nav.active {
-    display: flex;
-    background-color: #004080;
-    border: solid 2px black;
-    box-sizing: border-box;
-    transition: background-color 0.3s, transform 0.3s;
-    width: 100%;
-}
-
 /* Style the links inside the nav when active */
-.nav.active li a,
-.nav li a {
+.nav.active .li-hamburger a,
+.nav .li-hamburger a {
     color: #fff;
     font-weight: bold;
     font-size: 1.2rem;
     background: none;
     padding: 0.5rem 1rem;
     border-radius: .125rem;
-    transition: color 0.3s;
+    transition: color 0.3s, background 0.3s;
     background-color: #004080;
     text-decoration: none;
     display: block;
@@ -111,8 +120,8 @@ header {
 }
 
 /* Optional: Add a hover effect for links */
-.nav.active li a:hover,
-.nav li a:hover {
+.nav.active .li-hamburger a:hover,
+.nav .li-hamburger a:hover {
     background: #555;
     color: #ffd700;
 }
@@ -123,7 +132,7 @@ header {
     display: block;
     background: #004080;
     color: #fff;
-    border: none;
+     border: solid 3px #000000;
     border-radius: 1.3rem;
     padding: 0.75rem 2rem;
     font-size: 1rem;
@@ -132,10 +141,10 @@ header {
     box-shadow: 0 2px 6px rgba(0,0,0,0.08);
     transition: background 0.2s, color 0.2s;
 }
-#return-button:hover {
+/* #return-button:hover {
     background: #003060;
     color: #ffd700;
-}
+} */
 
 /* Navigation menu */
 .nav-menu {
@@ -165,43 +174,172 @@ header {
     border-bottom: none;
 }
 
-/* Tablet/Desktop: show nav, hide hamburger */
-@media (min-width: 600px) {
-    .nav {
-        position: static;
-        flex-direction: row;
-        display: flex !important;
-        background: none;
-        padding: 0;
-        gap: 2rem;
-    }
-    .hamburger {
-        display: none;
-    }
+/* Main */
+
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
 }
 
-/* Hide hamburger on desktop by default */
-@media (min-width: 768px) {
-    .hamburger {
-        display: none;
-    }
-    .nav-menu {
-        display: flex !important;
-        flex-direction: row;
-        position: static;
-        width: auto;
-        background: none;
-        box-shadow: none;
-    }
-    .nav-menu a {
-        border-bottom: none;
-        padding: 16px 24px;
-    }
+img{
+      width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    margin-top: 4rem;
 }
+
+h2{
+    text-align: center;
+}
+
+p{
+    display: flex;
+    justify-content: center;
+}
+
+
+/* footer */
+
+.footer-container{
+    display: flex;
+    justify-content: center;
+    background-color: #004080; /* Water blue */
+    margin-bottom: 1rem;
+    padding: 2rem;
+    border: solid 2px black;
+}
+
+.footer-name{
+    font-size: 1.4rem;
+    color: #fff;
+    text-decoration: underline black;
+}
+
+
+
+
+
+/* Tablet/Desktop: show nav, hide hamburger */
+
 
 /* Tablet styles */
-@media (min-width: 600px) and (max-width: 767px) {
-    .nav-menu a {
-        padding: 16px 20px;
+@media (min-width: 48rem) {
+    /* Header */
+    header {
+        padding: 2rem;
+    }
+
+    .logo {
+        font-size: 3rem;
+        margin-bottom: 0;
+    }
+
+    .nav {
+        display: flex !important;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        position: static;
+        background: none;
+        gap: 2rem;
+        width: 70%;
+        border: none;
+        padding: 0;
+        margin: 0 3rem 0 3rem;
+        box-sizing: border-box;
+    }
+
+    .ul-hamburger {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        list-style: none;
+        padding: 1rem;
+        margin: 1rem;
+       
+    }
+
+    /* .li-hamburger {
+        margin-top: 0;
+        text-align: center;
+    } */
+
+    .li-hamburger a {
+        font-size: 2rem;
+        background: none;
+        color: #fff;
+        padding: 0.5rem 1.2rem;
+        border-radius: .25rem;
+        transition: background 0.3s, color 0.3s;
+    }
+
+
+
+    .hamburger {
+        display: none;
+    }
+
+    /* Main */
+
+    .toy-details{
+        margin-bottom: 3rem;
+    }
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+
+/* Img */
+img{
+    width: 50%;
+    margin-bottom: 3rem;
+    margin-left: 12rem ;
+}
+
+/* Toy Info */
+
+ h2{
+    font-size: 3rem;
+}
+
+ p{
+    font-size: 2rem;
+}
+
+/* Return Button */
+#return-button {
+    padding: 1rem 2.2rem;
+    font-size: 1.7rem;
+
+
+}
+
+@media (min-width: 64rem) {
+    header {
+        padding: 1.5rem 3rem;
+    }
+    .logo {
+        font-size: 2.5rem;
+    }
+    .nav {
+        gap: 3rem;
+        padding: 0;
+        margin: 0 0 0 9rem;
+        justify-content: flex-end;
+    }
+    .ul-hamburger {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        margin: 2rem;
+        padding: 0;
+    }
+    .li-hamburger a {
+        font-size: 2rem;
     }
 }

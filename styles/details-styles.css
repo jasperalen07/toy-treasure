@@ -103,9 +103,12 @@ header {
     text-align: center;
 }
 
+.li-hamburger a{
+    color: #fff;
+}
+
 /* Style the links inside the nav when active */
-.nav.active .li-hamburger a,
-.nav .li-hamburger a {
+.nav.active{
     color: #fff;
     font-weight: bold;
     font-size: 1.2rem;
@@ -119,12 +122,13 @@ header {
     margin: 0 auto;
 }
 
-/* Optional: Add a hover effect for links */
-.nav.active .li-hamburger a:hover,
-.nav .li-hamburger a:hover {
-    background: #555;
-    color: #ffd700;
+/* Additional Global Styles */
+a {
+  display: block;
+  text-decoration: none; /* Removes the underline */
 }
+
+
 
 /* Back to Homepage button styles */
 #return-button {
@@ -132,15 +136,18 @@ header {
     display: block;
     background: #004080;
     color: #fff;
-     border: solid 3px #000000;
+    border: solid 3px #000000;
     border-radius: 1.3rem;
     padding: 0.75rem 2rem;
     font-size: 1rem;
     font-weight: bold;
     cursor: pointer;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+
     transition: background 0.2s, color 0.2s;
+    text-decoration: none;
+    border: none;
 }
+
 /* #return-button:hover {
     background: #003060;
     color: #ffd700;
@@ -214,7 +221,7 @@ p{
 .footer-name{
     font-size: 1.4rem;
     color: #fff;
-    text-decoration: underline black;
+    text-decoration: underline  #fff;
 }
 
 
@@ -315,54 +322,94 @@ img{
 #return-button {
     padding: 1rem 2.2rem;
     font-size: 1.7rem;
-
-
+    text-decoration: none;
 }
 
 @media (min-width: 64rem) {
     header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
         padding: 1.5rem 3rem;
     }
     .logo {
         font-size: 2.5rem;
+        margin-bottom: 0;
     }
     .nav {
-     gap: 3rem;
+        display: flex !important;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        position: static;
+        background: none;
+        gap: 1rem;
+        width: auto;
+        border: none;
         padding: 0;
         margin: 0;
-        justify-content: flex-end;
-        margin-left: 9rem;
+        box-sizing: border-box;
     }
     .ul-hamburger {
-            display: flex;
+        display: flex;
         flex-direction: row;
-         justify-content: flex-end;
-        margin: 2rem;
-         padding: 0rem;
-   
+        gap: 3rem;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    .li-hamburger {
+        margin-top: 0;
+        text-align: center;
     }
     .li-hamburger a {
-        font-size: 2rem;
-        gap: 1rem;
+        font-size: 2.2rem;
+        background: none;
+        color: #fff;
+        padding: 0.5rem 1.2rem;
+        border-radius: .25rem;
+        transition: background 0.3s, color 0.3s;
+    }
+    .li-hamburger a:hover {
+        background: #fff;
+        color: #004080;
+    }
+    .hamburger {
+        display: none;
     }
 
-
-    /* Main */
-
-     img{
-    width: 30%;
-    height: auto;
-    margin-top: 2rem;
-    margin-left:32rem ;
-}
-
- h2{
-    font-size: 1.5rem;
-}
-
- p {
-    font-size: 1.5rem;
-
-}
+    /* Main content spacing fixes */
+    .toy-details {
+        margin: 3rem auto 3rem auto;
+        /* max-width removed */
+        padding: 2rem 3rem;
+        background: #fff;
+        border-radius: 1.5rem;
+        box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    }
+    img {
+        width: 40%;
+        margin: 2rem auto 3rem auto;
+        display: block;
+        border-radius: 1rem;
+    }
+    h2 {
+        font-size: 2.2rem;
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+    p {
+        font-size: 1.3rem;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    #return-button {
+        padding: 1rem 2.2rem;
+        font-size: 1.7rem;
+        text-decoration: none;
+        margin: 2rem auto 0 auto;
+        display: block;
+    }
 }
 }

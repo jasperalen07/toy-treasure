@@ -18,6 +18,8 @@ header {
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
+    text-decoration: none;
+    color: white;
 }
 
 .nav {
@@ -68,6 +70,7 @@ header {
 
 .ul-hamburger{
     list-style: none;
+   
 }
 .hamburger {
     display: block;
@@ -230,6 +233,7 @@ width:50%;
     left: 50%; /* Center horizontally */
     transform: translateX(-50%); /* Adjust for centering */
     z-index: 1000; /* Ensure it stays above other elements */
+   
 }
 
 .ul-hamburger {
@@ -238,7 +242,7 @@ width:50%;
     gap: 1rem; /* Add spacing between list items */
     list-style: none; /* Remove default list styling */
     padding: 2rem; /* Remove padding */
-    margin: 1rem; /* Remove margin */
+    margin: 0; /* Remove margin */
    
 }
 
@@ -338,7 +342,7 @@ div a {
         display: flex;
         flex-direction: row;
          justify-content: flex-end;
-        margin: 2rem;
+        margin: 1rem;
          padding: 0rem;
          
 } 

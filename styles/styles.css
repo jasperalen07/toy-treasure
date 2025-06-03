@@ -134,6 +134,7 @@ header {
 .toy-details{
     display: flex;
     flex-direction: column;
+   
 }
 
 div {
@@ -330,7 +331,7 @@ div a {
         font-size: 2.5rem;
     }
     .nav {
-        gap: 3rem;
+        gap: 2rem;
         padding: 0;
         margin: 0;
         justify-content: flex-end;
@@ -342,10 +343,16 @@ div a {
         display: flex;
         flex-direction: row;
          justify-content: flex-end;
+         gap: 1rem;
         margin: 1rem;
          padding: 0rem;
          
 } 
+
+   .li-hamburger a:hover {
+        background-color: #fff;
+        color: #004080;
+    }
 
 .li-hamburger a {
     color: white;
@@ -374,6 +381,8 @@ width:20%;
    padding: 2rem;
   
 }
+
+
 
 
 div img{

@@ -100,6 +100,7 @@ header {
     gap: 1rem;
 }
 
+
 .li-hamburger {
     width: 100%;
     text-align: center;
@@ -294,6 +295,7 @@ p{
 
     .toy-details{
         margin-bottom: 3rem;
+
     }
 div {
     display: flex;
@@ -356,7 +358,7 @@ img{
     .ul-hamburger {
         display: flex;
         flex-direction: row;
-        gap: 3rem;
+        gap: 2rem;
         list-style: none;
         padding: 0;
         margin: 0;
@@ -413,5 +415,11 @@ img{
         margin: 2rem auto 0 auto;
         display: block;
     }
+
+     #return-button:hover{
+        background-color: #fff;
+        color: #004080;
+        border: #000000 solid 3px;
+     }
 }
 }
